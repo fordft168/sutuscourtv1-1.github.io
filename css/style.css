@@ -147,14 +147,13 @@ textarea.form-control {
   animation: glowing 1.5s ease-in-out infinite;
 }
 
-/* Styles for desktop screens */
-@media (min-width: 768px) {
-  .navbar-nav .nav-link.scrolled {
-    background-color: transparent;
+  /* Styles for desktop screens */
+  @media (min-width: 768px) {
+    .navbar-nav .nav-link.scrolled {
+      background-color: transparent;
+    }
+
   }
-}
-
-
 
 @keyframes glowing {
   0% {
@@ -709,6 +708,41 @@ textarea.form-control {
     width: 60px;
     text-align: center;
     display: inline-block; }
+
+.owl-dot-number {
+    background: none;
+    color: #000;
+    border: 1px solid #000;
+    padding: 5px;
+    border-radius: 50%;
+    margin: 0 3px;
+    font-size: 14px;
+    line-height: 1;
+  }
+  .owl-carousel .slider-item { /************ here is rooms pages setting ************/
+    height: 428px; /* Adjust the height as per your preference */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  @media (max-width: 767px) {
+    .owl-carousel .slider-item {
+      height: 290px; /* Adjust the height for mobile devices */
+    }
+  }
+  
+  .owl-carousel .slider-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    width: auto;
+    height: auto;
+    margin: auto;
+  }
+  
+  
+  
 
 .footer-section {
   background: #1a1a1a;
