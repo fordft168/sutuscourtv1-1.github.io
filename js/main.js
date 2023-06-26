@@ -128,7 +128,49 @@
   	}
 	});
 
-
+  // Owlcarousel
+  $(document).ready(function() {
+    var owl = $('#slider-card');
+  
+    owl.owlCarousel({
+      loop: true,
+      margin: 15,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        576: {
+          items: 2,
+          nav: false
+        },
+        992: {
+          items: 3,
+          nav: false
+        }
+      },
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: true,
+      animateOut: 'fadeOut',
+      animateIn: 'fadeIn',
+      smartSpeed: 450,
+      navSpeed: 600
+    });
+  
+    $('.slider-next').click(function() {
+      owl.trigger('next.owl.carousel');
+    });
+  
+    $('.slider-prev').click(function() {
+      owl.trigger('prev.owl.carousel');
+    });
+  });
+  
+  
+  
 
   var siteStellar = function() {
     $(window).stellar({
