@@ -138,92 +138,116 @@
       </div>
     <!-- END section -->
 
-    <section class="section blog-post-entry bg-light" id="next">
-      <div class="container">
-        
-        <div class="row">
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post mb-5" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="media media-custom d-block mb-4 h-100">
-              <a href="#" class="mb-4 d-block"><img src="images/img_1.jpg" alt="Image placeholder" class="img-fluid"></a>
-              <div class="media-body">
-                <span class="meta-post">February 26, 2018</span>
-                <h2 class="mt-0 mb-3"><a href="#">Travel Hacks to Make Your Flight More Comfortable</a></h2>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post mb-5" data-aos="fade-up" data-aos-delay="200">
-            <div class="media media-custom d-block mb-4 h-100">
-              <a href="#" class="mb-4 d-block"><img src="images/img_2.jpg" alt="Image placeholder" class="img-fluid"></a>
-              <div class="media-body">
-                <span class="meta-post">February 26, 2018</span>
-                <h2 class="mt-0 mb-3"><a href="#">5 Job Types That Aallow You To Earn As You Travel The World</a></h2>
-                <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post mb-5" data-aos="fade-up" data-aos-delay="300">
-            <div class="media media-custom d-block mb-4 h-100">
-              <a href="#" class="mb-4 d-block"><img src="images/img_3.jpg" alt="Image placeholder" class="img-fluid"></a>
-              <div class="media-body">
-                <span class="meta-post">February 26, 2018</span>
-                <h2 class="mt-0 mb-3"><a href="#">30 Great Ideas On Gifts For Travelers</a></h2>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. t is a paradisematic country, in which roasted parts of sentences.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post mb-5" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="media media-custom d-block mb-4 h-100">
-              <a href="#" class="mb-4 d-block"><img src="images/img_4.jpg" alt="Image placeholder" class="img-fluid"></a>
-              <div class="media-body">
-                <span class="meta-post">February 26, 2018</span>
-                <h2 class="mt-0 mb-3"><a href="#">Travel Hacks to Make Your Flight More Comfortable</a></h2>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post mb-5" data-aos="fade-up" data-aos-delay="200">
-            <div class="media media-custom d-block mb-4 h-100">
-              <a href="#" class="mb-4 d-block"><img src="images/img_1.jpg" alt="Image placeholder" class="img-fluid"></a>
-              <div class="media-body">
-                <span class="meta-post">February 26, 2018</span>
-                <h2 class="mt-0 mb-3"><a href="#">5 Job Types That Aallow You To Earn As You Travel The World</a></h2>
-                <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post mb-5" data-aos="fade-up" data-aos-delay="300">
-            <div class="media media-custom d-block mb-4 h-100">
-              <a href="#" class="mb-4 d-block"><img src="images/img_2.jpg" alt="Image placeholder" class="img-fluid"></a>
-              <div class="media-body">
-                <span class="meta-post">February 26, 2018</span>
-                <h2 class="mt-0 mb-3"><a href="#">30 Great Ideas On Gifts For Travelers</a></h2>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. t is a paradisematic country, in which roasted parts of sentences.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- <div class="row" data-aos="fade">
-          <div class="col-12">
-            <div class="custom-pagination">
-              <ul class="list-unstyled">
-                <li class="active"><span>1</span></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><span>...</span></li>
-                <li><a href="#">30</a></li>
-              </ul>
-            </div>
-          </div>
-        <div> -->
-      </div>
-    </section>
+    <style>
+      .table {
+        counter-reset: row-number;
+      }
+  
+      .table th {
+        background-color: #343a40;
+        color: #fff;
+        border-color: #dee2e6;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+  
+      .table-striped tbody tr:nth-of-type(odd) {
+        background-color: #f8f9fa;
+      }
+  
+      .table-bordered th,
+      .table-bordered td {
+        border-color: #dee2e6;
+      }
+  
+      .table-bordered td {
+        background-color: #f1f1f1;
+      }
+  
+      .table-bordered td:first-child:before {
+        min-width: 1em;
+        margin-right: 0.5em;
+      }
+    </style>
+    <title>Table Example</title>
+  </head>
+  <body>
+    <div class="container">
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th scope="col">SEASON</th>
+            <th scope="col">ZONE 1</th>
+            <th scope="col">ZONE 2</th>
+            <th scope="col">ZONE 3</th>
+            <th scope="col">ZONE 4</th>
+            <th scope="col">ZONE 5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Full Rates</td>
+            <td>1060</td>
+            <td>850</td>
+            <td>780</td>
+            <td>780</td>
+            <td>650</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>Low 11 May - 31 October</td>
+            <td>950</td>
+            <td>750</td>
+            <td>690</td>
+            <td>720</td>
+            <td>580</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>High 1 March - 10 May / 1 November - 30 November</td>
+            <td>990</td>
+            <td>800</td>
+            <td>750</td>
+            <td>750</td>
+            <td>620</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>Peak 01 Dec - 28 Feb</td>
+            <td>1060</td>
+            <td>850</td>
+            <td>780</td>
+            <td>780</td>
+            <td>650</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>Late Check-out 12.00 - 16.00</td>
+            <td>200-400</td>
+            <td>200-400</td>
+            <td>200-400</td>
+            <td>200-400</td>
+            <td>200-400</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>Extra beds(Rate)</td>
+            <td>400</td>
+            <td>-</td>
+            <td>350</td>
+            <td>350</td>
+            <td>-</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+  </body>
 
     
     
