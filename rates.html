@@ -138,6 +138,68 @@
       </div>
     <!-- END section -->
 
+    <section class="section bg-light pb-0"  >
+      <div class="container">
+       
+        <div class="row check-availabilty" id="next">
+          <div class="block-32" data-aos="fade-up" data-aos-offset="-200">
+
+            <form action="#">
+              <div class="row">
+                <div class="col-md-6 mb-3 mb-lg-0 col-lg-3">
+                  <label for="checkin_date" class="font-weight-bold text-black">Check In</label>
+                  <div class="field-icon-wrap">
+                    <div class="icon"><span class="icon-calendar"></span></div>
+                    <input type="text" id="checkin_date" class="form-control">
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3 mb-lg-0 col-lg-3">
+                  <label for="checkout_date" class="font-weight-bold text-black">Check Out</label>
+                  <div class="field-icon-wrap">
+                    <div class="icon"><span class="icon-calendar"></span></div>
+                    <input type="text" id="checkout_date" class="form-control">
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3 mb-md-0 col-lg-3">
+                  <div class="row">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                      <label for="adults" class="font-weight-bold text-black">Adults</label>
+                      <div class="field-icon-wrap">
+                        <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                        <select name="" id="adults" class="form-control">
+                          <option value="">1</option>
+                          <option value="">2</option>
+                          <option value="">3</option>
+                          <option value="">4+</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-3 mb-md-0">
+                      <label for="children" class="font-weight-bold text-black">Children</label>
+                      <div class="field-icon-wrap">
+                        <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                        <select name="" id="children" class="form-control">
+                          <option value="">1</option>
+                          <option value="">2</option>
+                          <option value="">3</option>
+                          <option value="">4+</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3 align-self-end">
+                  <button class="btn btn-primary btn-block text-white">Check Availabilty</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
     <style>
       .table {
         counter-reset: row-number;
@@ -169,85 +231,95 @@
         margin-right: 0.5em;
       }
     </style>
-    <title>Table Example</title>
-  </head>
-  <body>
-    <div class="container">
-      <table class="table table-bordered table-striped">
-        <thead>
-          <tr>
-            <th scope="col">SEASON</th>
-            <th scope="col">ZONE 1</th>
-            <th scope="col">ZONE 2</th>
-            <th scope="col">ZONE 3</th>
-            <th scope="col">ZONE 4</th>
-            <th scope="col">ZONE 5</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Full Rates</td>
-            <td>1060</td>
-            <td>850</td>
-            <td>780</td>
-            <td>780</td>
-            <td>650</td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td>Low 11 May - 31 October</td>
-            <td>950</td>
-            <td>750</td>
-            <td>690</td>
-            <td>720</td>
-            <td>580</td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td>High 1 March - 10 May / 1 November - 30 November</td>
-            <td>990</td>
-            <td>800</td>
-            <td>750</td>
-            <td>750</td>
-            <td>620</td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td>Peak 01 Dec - 28 Feb</td>
-            <td>1060</td>
-            <td>850</td>
-            <td>780</td>
-            <td>780</td>
-            <td>650</td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td>Late Check-out 12.00 - 16.00</td>
-            <td>200-400</td>
-            <td>200-400</td>
-            <td>200-400</td>
-            <td>200-400</td>
-            <td>200-400</td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td>Extra beds(Rate)</td>
-            <td>400</td>
-            <td>-</td>
-            <td>350</td>
-            <td>350</td>
-            <td>-</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
-  </body>
+    <section class="facilities-section" data-aos="fade-up">
+      <div class="container">
+        <h3 class="section-title" data-aos="fade-up">RATES</h3>
+        <div class="facilities-content">
+          <p data-aos="fade-up" data-aos-delay="100" class="facilities-description">
+            Seasonal Room Rates in Thai Baht
+
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <body>
+      <div class="container">
+        <table class="table table-bordered table-striped" data-aos="fade-up" data-aos-delay="200">
+          <thead>
+            <tr>
+              <th scope="col">SEASON</th>
+              <th scope="col">ZONE 1</th>
+              <th scope="col">ZONE 2</th>
+              <th scope="col">ZONE 3</th>
+              <th scope="col">ZONE 4</th>
+              <th scope="col">ZONE 5</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Full Rates</td>
+              <td>1060</td>
+              <td>850</td>
+              <td>780</td>
+              <td>780</td>
+              <td>650</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Low 11 May - 31 October</td>
+              <td>950</td>
+              <td>750</td>
+              <td>690</td>
+              <td>720</td>
+              <td>580</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>High 1 March - 10 May / 1 November - 30 November</td>
+              <td>990</td>
+              <td>800</td>
+              <td>750</td>
+              <td>750</td>
+              <td>620</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Peak 01 Dec - 28 Feb</td>
+              <td>1060</td>
+              <td>850</td>
+              <td>780</td>
+              <td>780</td>
+              <td>650</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Late Check-out 12.00 - 16.00</td>
+              <td>200-400</td>
+              <td>200-400</td>
+              <td>200-400</td>
+              <td>200-400</td>
+              <td>200-400</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Extra beds(Rate)</td>
+              <td>400</td>
+              <td>-</td>
+              <td>350</td>
+              <td>350</td>
+              <td>-</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </body>
+    
 
     
     
