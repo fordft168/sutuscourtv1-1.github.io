@@ -802,6 +802,12 @@ textarea.form-control {
     background-color: transparent;
     outline: none;
   }
+
+  .small-icon {
+    width: 25px; /* Adjust the width as per your requirement */
+    height: auto;
+  }
+  
     
 
 
